@@ -1,9 +1,5 @@
 FROM debian:buster
 
-ARG TARGETPLATFORM
-ARG BUILDPLATFORM
-RUN echo "I am running on $BUILDPLATFORM, building for $TARGETPLATFORM" 
-
 RUN apt-get update && apt-get install -y \
   sudo \
   locales \
